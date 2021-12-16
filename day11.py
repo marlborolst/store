@@ -1,54 +1,29 @@
 from threading import Thread
 import time
+import threading
+import sys
 
 box=0
+start=time.time()
+#print("kaishi",start)
 class cook(Thread):
+    m1=threading.Lock()
     chefname=""
     work=0
     workmoney=0
     def run(self) -> None:
         global box
         while True:
-
+            self.m1.acquire()
             if box == 500:
-                print("篮子满了，有", box, "个蛋挞")
+                print("篮子满了，请3秒后再做！")
                 time.sleep(3)
-
             if box < 500:
                 box = box + 1
                 self.work = self.work + 1
                 self.workmoney = self.workmoney + 1.5
-                print(self.chefname, "做了1个蛋挞", "篮子里有", box, "个蛋挞")
-                print()
-            else:
-                print(self.chefname, "总共做了", self.work, "个蛋挞，赚了", self.workmoney, "元")
-                print()
-                break
-
-class costmer(Thread):
-    name = ""
-    money=30000
-    zmoney=0
-    count=0
-
-    def run(self) -> None:
-        global box
-
-        while True:
-            if box >0 :
-                if self.money > 3:
-                    self.count = self.count + 1
-                    self.money = self.money - 3
-
-                    box = box - 1
-                    print(self.name,"抢了",self.count,"个蛋挞","花了",3*self.count,"元",end="")
-
-                else:
-                    print()
-                    print(self.name,"没钱了！！！！！！！！！！！！！！！！！！！！！！！！！")
-                    print()
-                    break
-
+                print(self.chefname, "----------做了1个蛋挞", "篮子里有", box, "个蛋挞", "总共做了", self.work, "个蛋挞，赚了", self.workmoney, "元")
+                self.m1.release()
 
 cc1=cook()
 cc2=cook()
@@ -61,6 +36,33 @@ cc3.chefname="厨师C"
 cc1.start()
 cc2.start()
 cc3.start()
+
+class costmer(Thread):
+    m2=threading.Lock()
+    name = ""
+    money=30000
+    count=0
+    def run(self) -> None:
+        global box
+        while True:
+            end = time.time()
+            #print("jieshu", end, end - start)
+            self.m2.acquire()
+            if box >0 :
+                if self.money >= 30:
+                    self.count = self.count + 1
+                    self.money = self.money - 3
+                    box = box - 1
+                    print(self.name,"..........抢了",self.count,"个蛋挞","花了",3*self.count,"元","篮子里还剩",box,"个蛋挞")
+                    time.sleep(0.1)
+            else:
+                print(self.name,"蛋挞不足请等待3秒")
+                time.sleep(3)
+
+            if end - start >= 180:
+                print("本店只营业3分钟！不卖了！！！！！！！！！！！！！！！！！！！！！！！！")
+                sys.exit()
+            self.m2.release()
 
 c1=costmer()
 c2=costmer()
