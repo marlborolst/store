@@ -5,7 +5,7 @@ import sys
 
 box=0
 start=time.time()
-#print("kaishi",start)
+
 class cook(Thread):
     m1=threading.Lock()
     chefname=""
@@ -15,6 +15,10 @@ class cook(Thread):
         global box
         while True:
             self.m1.acquire()
+            end = time.time()
+            if end - start >= 10:
+                print("本店只营业3分钟！不卖了！！！！！！！！！！！！！！！！！！！！！！！！")
+                sys.exit()
             if box == 500:
                 print("篮子满了，请3秒后再做！")
                 time.sleep(3)
@@ -25,18 +29,6 @@ class cook(Thread):
                 print(self.chefname, "----------做了1个蛋挞", "篮子里有", box, "个蛋挞", "总共做了", self.work, "个蛋挞，赚了", self.workmoney, "元")
                 self.m1.release()
 
-cc1=cook()
-cc2=cook()
-cc3=cook()
-
-cc1.chefname="厨师A"
-cc2.chefname="厨师B"
-cc3.chefname="厨师C"
-
-cc1.start()
-cc2.start()
-cc3.start()
-
 class costmer(Thread):
     m2=threading.Lock()
     name = ""
@@ -45,24 +37,28 @@ class costmer(Thread):
     def run(self) -> None:
         global box
         while True:
-            end = time.time()
-            #print("jieshu", end, end - start)
             self.m2.acquire()
+            end = time.time()
+            if end - start >= 10:
+                sys.exit()
+            if box == 0:
+                print(self.name,"蛋挞不足请等待3秒")
+                time.sleep(3)
             if box >0 :
-                if self.money >= 30:
+                if self.money >= 3:
                     self.count = self.count + 1
                     self.money = self.money - 3
                     box = box - 1
                     print(self.name,"..........抢了",self.count,"个蛋挞","花了",3*self.count,"元","篮子里还剩",box,"个蛋挞")
                     time.sleep(0.1)
-            else:
-                print(self.name,"蛋挞不足请等待3秒")
-                time.sleep(3)
-
-            if end - start >= 180:
-                print("本店只营业3分钟！不卖了！！！！！！！！！！！！！！！！！！！！！！！！")
-                sys.exit()
             self.m2.release()
+cc1=cook()
+cc2=cook()
+cc3=cook()
+
+cc1.chefname="厨师A"
+cc2.chefname="厨师B"
+cc3.chefname="厨师C"
 
 c1=costmer()
 c2=costmer()
@@ -85,4 +81,6 @@ c4.start()
 c5.start()
 c6.start()
 
-
+cc1.start()
+cc2.start()
+cc3.start()
