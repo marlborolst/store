@@ -1,0 +1,273 @@
+Daily stats:
+  Current start time: 2021-12-31-10-11-35
+  Next min deadline: 2022-01-01-01-00-00
+  Next max deadline: 2022-01-01-03-00-00
+  Current daily steps:
+  Daily from 2021-12-30-09-44-55 to 2021-12-31-10-11-35:
+  Daily from 2021-12-24-11-17-12 to 2021-12-29-15-42-02:
+
+Statistics since last charge:
+  System starts: 0, currently on battery: true
+  Estimated battery capacity: 1000 mAh
+  Time on battery: 55m 42s 825ms (100.0%) realtime, 55m 42s 825ms (100.0%) uptime
+  Time on battery screen off: 756ms (0.0%) realtime, 756ms (0.0%) uptime
+  Total run time: 55m 42s 825ms realtime, 55m 42s 825ms uptime
+  Discharge: 0 mAh
+  Screen off discharge: 0 mAh
+  Screen on discharge: 0 mAh
+  Start clock time: 2021-12-31-14-28-24
+  Screen on: 55m 42s 69ms (100.0%) 1x, Interactive: 55m 42s 73ms (100.0%)
+  Screen brightnesses:
+    dark 7m 3s 604ms (12.7%)
+    medium 48m 38s 465ms (87.3%)
+  Connectivity changes: 1
+  Total full wakelock time: 31m 27s 385ms
+  Mobile total received: 0B, sent: 0B (packets received 0, sent 0)
+  Phone signal levels:
+    none 55m 38s 370ms (99.9%) 1x
+  Signal scanning time: 55m 38s 370ms
+  Radio types: (no activity)
+  Mobile radio active time: 0ms (0.0%) 0x
+  Radio Idle time:   0ms (--%)
+  Radio Rx time:     0ms (--%)
+  Radio Tx time:     0ms (--%)
+    [0] 0ms (--%)
+    [1] 0ms (--%)
+    [2] 0ms (--%)
+    [3] 0ms (--%)
+    [4] 0ms (--%)
+  Radio Power drain: 0mAh
+  Wi-Fi total received: 0B, sent: 0B (packets received 0, sent 0)
+  Wifi on: 55m 39s 83ms (99.9%), Wifi running: 55m 39s 85ms (99.9%)
+  Wifi states: (no activity)
+  Wifi supplicant states:
+    disconn 1s 345ms (0.0%) 2x
+    scanning 1s 6ms (0.0%) 1x
+    associated 7ms (0.0%) 1x
+    completed 55m 36s 723ms (99.8%) 1x
+  Wifi signal levels:
+    level(3) 306ms (0.0%) 1x
+    level(4) 55m 36s 424ms (99.8%) 1x
+  WiFi Idle time:   0ms (--%)
+  WiFi Rx time:     0ms (--%)
+  WiFi Tx time:     0ms (--%)
+  WiFi Power drain: 0mAh
+  Bluetooth total received: 0B, sent: 0B
+  Bluetooth scan time: 0ms 
+  Bluetooth Idle time:   0ms (--%)
+  Bluetooth Rx time:     0ms (--%)
+  Bluetooth Tx time:     0ms (--%)
+  Bluetooth Power drain: 0mAh
+
+  Device battery use since last full charge
+    Amount discharged (lower bound): 0
+    Amount discharged (upper bound): 0
+    Amount discharged while screen on: 0
+    Amount discharged while screen off: 0
+
+  Estimated power use (mAh):
+    Capacity: 1000, Computed drain: 0.667, actual drain: 0
+    Cell standby: 0.278 ( radio=0.278 )
+    Screen: 0.135
+    Wifi: 0.0933 ( wifi=0.0933 )
+    Idle: 0.0929
+    Uid u0a42: 0.0598 ( gps=0.0598 )
+    Uid u0a41: 0.00799 ( sensor=0.00799 )
+    Uid 1000: 0.000622 ( sensor=0.000622 )
+    Uid u0a33: 0.000161 ( sensor=0.000161 )
+    Uid 0: 0
+
+  1000:
+    User activity: 545 other, 46 button, 665 touch
+    Wake lock *dexopt* realtime
+    Wake lock LocationManagerService realtime
+    Wake lock WiredAccessoryManager realtime
+    Wake lock *alarm* realtime
+    Wake lock AudioMix realtime
+    Wake lock *launch* realtime
+    Wake lock WindowManager: 1m 47s 590ms full (22 times) realtime
+    Wake lock GnssLocationProvider realtime
+    Wake lock NetworkTimeUpdateService realtime
+    Wake lock *job*/android/com.android.server.pm.BackgroundDexOptService realtime
+    Wake lock SyncLoopWakeLock realtime
+    Wake lock SCREEN_FROZEN realtime
+    TOTAL wake: 1m 47s 590ms full realtime
+    Job android/com.android.server.pm.BackgroundDexOptService: 2s 229ms realtime (1 times)
+    Sensor 0: 6s 396ms realtime (1 times)
+    Foreground activities: 45m 43s 464ms realtime (16 times) (running)
+    Fg Service for: 1s 134ms 
+    Cached for: 55m 41s 691ms 
+    Total running: 55m 42s 825ms 
+    Proc servicemanager:
+      CPU: 70ms usr + 810ms krn ; 0ms fg
+    Proc WebViewLoader-x86:
+      CPU: 0ms usr + 0ms krn ; 0ms fg
+      1 starts
+    Proc com.android.settings:
+      CPU: 520ms usr + 340ms krn ; 50ms fg
+      1 starts
+    Proc system:ui:
+      CPU: 440ms usr + 740ms krn ; 0ms fg
+      1 starts
+    Proc com.android.inputservice:
+      CPU: 410ms usr + 150ms krn ; 0ms fg
+      1 starts
+    Proc com.android.keychain:
+      CPU: 0ms usr + 0ms krn ; 0ms fg
+      1 starts
+    Proc android:
+      CPU: 0ms usr + 0ms krn ; 640ms fg
+    Proc system:
+      CPU: 1m 16s 570ms usr + 45s 200ms krn ; 0ms fg
+    Proc com.vphone.launcher:
+      CPU: 3s 950ms usr + 1s 260ms krn ; 4s 430ms fg
+      1 starts
+    Apk com.android.location.fused:
+      Service com.android.location.fused.FusedLocationService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+    Apk com.android.inputservice:
+      Service com.android.inputservice.InputService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+    Apk com.android.keychain:
+      Service com.android.keychain.KeyChainService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+    Apk com.android.server.telecom:
+      Service com.android.server.telecom.components.TelecomService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+      Service com.android.server.telecom.components.BluetoothPhoneService:
+        Created for: 55m 38s 774ms uptime
+        Starts: 1, launches: 1
+    Apk android:
+      Wakeup alarm *walarm*:*job.delay*: 2 times
+      Wakeup alarm *walarm*:com.android.internal.location.ALARM_WAKEUP: 27 times
+      Wakeup alarm *walarm*:WifiConnectivityManager Schedule Periodic Scan Timer: 19 times
+      Wakeup alarm *walarm*:*job.deadline*: 1 times
+      Wakeup alarm *walarm*:WifiConnectivityManager Schedule Watchdog Timer: 1 times
+      Wakeup alarm *walarm*:com.android.internal.location.ALARM_TIMEOUT: 3 times
+      Service android.hardware.location.GeofenceHardwareService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+      Service com.android.server.pm.BackgroundDexOptService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+      Service com.android.server.content.SyncJobService:
+        Created for: 55m 38s 774ms uptime
+        Starts: 1, launches: 1
+  u0a41:
+    Wake lock *job*/com.sina.weibo.sync.authority/com.sina.weibo.account/微博:android realtime
+    Wake lock *dexopt* realtime
+    Wake lock *alarm* realtime
+    Wake lock *sync*/com.sina.weibo.sync.authority/com.sina.weibo.account/xz干嘛�?realtime
+    Wake lock WLog.WakerLock realtime
+    Wake lock AudioMix realtime
+    Wake lock *sync*/com.android.contacts/com.sina.weibo.account/微博 realtime
+    Wake lock *sync*/com.sina.weibo.sync.authority/com.sina.weibo.account/微博 realtime
+    Wake lock *launch* realtime
+    Wake lock *job*/com.android.contacts/com.sina.weibo.account/微博:android realtime
+    Wake lock WindowManager: 7m 45s 261ms full (82 times) realtime
+    Wake lock *sync*/com.android.contacts/com.sina.weibo.account/xz干嘛�?realtime
+    Wake lock *job*/com.sina.weibo.sync.authority/com.sina.weibo.account/xz干嘛�?android realtime
+    Wake lock *job*/com.android.contacts/com.sina.weibo.account/xz干嘛�?android realtime
+    TOTAL wake: 7m 45s 261ms full realtime
+    Sync com.sina.weibo.sync.authority/com.sina.weibo.account/微博: 4s 883ms realtime (27 times)
+    Sync com.android.contacts/com.sina.weibo.account/微博: 352ms realtime (1 times)
+    Sync com.sina.weibo.sync.authority/com.sina.weibo.account/xz干嘛�? 1s 456ms realtime (2 times)
+    Sync com.android.contacts/com.sina.weibo.account/xz干嘛�? 722ms realtime (1 times)
+    Job com.sina.weibo.sync.authority/com.sina.weibo.account/xz干嘛�?android: 1s 466ms realtime (3 times)
+    Job com.sina.weibo.sync.authority/com.sina.weibo.account/微博:android: 5s 77ms realtime (28 times)
+    Job com.android.contacts/com.sina.weibo.account/微博:android: 373ms realtime (2 times)
+    Job com.android.contacts/com.sina.weibo.account/xz干嘛�?android: 725ms realtime (1 times)
+    Sensor 0: 25s 130ms realtime (18 times)
+    Sensor 2: 763ms realtime (4 times)
+    Sensor 3: 804ms realtime (4 times)
+    Sensor 4: 814ms realtime (4 times)
+    Sensor 5: 775ms realtime (4 times)
+    Sensor 7: 771ms realtime (4 times)
+    Sensor 1601335158: 799ms realtime (4 times)
+    Foreground activities: 23m 7s 170ms realtime (36 times)
+    Top for: 24m 15s 534ms 
+    Background for: 5m 17s 951ms 
+    Cached for: 1s 22ms 
+    Total running: 29m 34s 507ms 
+    Proc com.sina.weibo.image:
+      CPU: 70ms usr + 10ms krn ; 0ms fg
+      16 starts
+    Proc com.sina.weibo:
+      CPU: 9s 560ms usr + 2s 370ms krn ; 14m 29s 780ms fg
+      17 starts
+    Proc com.sina.weibo:remote:
+      CPU: 0ms usr + 0ms krn ; 0ms fg
+      16 starts
+    Proc com.sina.weibo:sandboxed_process0:
+      CPU: 0ms usr + 0ms krn ; 0ms fg
+      2 starts
+    Proc com.sina.weibo.servant:
+      CPU: 0ms usr + 0ms krn ; 0ms fg
+      2 starts
+    Proc com.sina.weibo.dexOpt:
+      CPU: 0ms usr + 0ms krn ; 0ms fg
+      9 starts
+    Apk com.sina.weibo:
+      Service com.sina.weibo.business.ImageViewerService:
+        Created for: 39m 13s 901ms uptime
+        Starts: 1, launches: 16
+      Service com.sina.weibo.sync.AuthenticationService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 2
+      Service com.sina.weibo.healthkit.source.StorageConfigService:
+        Created for: 616ms uptime
+        Starts: 1, launches: 1
+      Service com.sina.weibo.business.WeiboRemoteServiceHolder:
+        Created for: 38m 39s 599ms uptime
+        Starts: 1, launches: 15
+      Service com.sina.weibo.plugin.download.DownloadService:
+        Created for: 11s 816ms uptime
+        Starts: 10, launches: 10
+      Service com.sina.weibo.appmarket.service.AppMarketService:
+        Created for: 5m 33s 16ms uptime
+        Starts: 1, launches: 3
+      Service com.sina.weibo.healthkit.source.HealthUploadService:
+        Created for: 301ms uptime
+        Starts: 21, launches: 21
+      Service com.sina.wbs.services.SandboxedProcessServiceProxy0:
+        Created for: 0ms uptime
+        Starts: 0, launches: 2
+      Service com.sina.weibo.HotEventService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 15
+      Service com.xiaomi.push.service.XMPushService:
+        Created for: 38m 42s 386ms uptime
+        Starts: 1, launches: 15
+      Service com.sina.weibo.weiyou.refactor.service.DMService:
+        Created for: 38m 37s 385ms uptime
+        Starts: 1, launches: 15
+      Service com.sina.weibo.business.WeiboService:
+        Created for: 27m 58s 26ms uptime
+        Starts: 7, launches: 15
+      Service com.sina.weibo.core.DexOptService:
+        Created for: 2s 711ms uptime
+        Starts: 9, launches: 9
+      Service com.sina.weibo.sync.contact.ContactsSyncService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 2
+      Service com.sina.push.service.SinaPushService:
+        Created for: 38m 40s 557ms uptime
+        Starts: 1, launches: 15
+      Service com.sina.weibo.push.PushServiceProxy:
+        Created for: 10s 771ms uptime
+        Starts: 17, launches: 17
+      Service com.sina.weibo.appmarket.service.AppMarketNetService:
+        Created for: 5m 32s 294ms uptime
+        Starts: 1, launches: 3
+      Service com.sina.weibo.sync.guard.GuardSyncService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 29
+      Service com.sina.weibo.business.DownloadManager:
+        Created for: 2m 6s 158ms uptime
+        Starts: 1, launches: 2
+
+
